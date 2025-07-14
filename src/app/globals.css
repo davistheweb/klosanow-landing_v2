@@ -1,26 +1,128 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Fonts */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Encode Sans", sans-serif;
+
+  /* === Primary Color Palette === */
+  --color-primary-100: #191231;
+  --color-primary-90: #291d51;
+  --color-primary-80: #3d2c7a;
+  --color-primary-70: #523ba3;
+  --color-primary-60: #6649cb;
+  --color-primary-50: #7b58f4;
+  --color-primary-40: #9174f6;
+  --color-primary-30: #a790f8;
+  --color-primary-20: #bdabf9;
+  --color-primary-15: #dbd0ff;
+  --color-primary-10: #d3c7fb;
+  --color-primary-5: #e5defd;
+
+  /* === Secondary === */
+  --color-secondary-100: #2b1d19;
+  --color-secondary-90: #483129;
+  --color-secondary-80: #6c493d;
+  --color-secondary-70: #916152;
+  --color-secondary-60: #b57a66;
+  --color-secondary-50: #d9927b;
+  --color-secondary-40: #dfa491;
+  --color-secondary-30: #e6b6a7;
+  --color-secondary-20: #ecc8bd;
+  --color-secondary-10: #f2dbd3;
+  --color-secondary-5: #f7e9e5;
+
+  /* === Black === */
+  --color-black-100: #000000;
+  --color-black-90: #000000;
+  --color-black-80: #000000;
+  --color-black-70: #000000;
+  --color-black-60: #191231;
+  --color-black-50: #525256;
+  --color-black-40: #2a2a2a;
+  --color-black-30: #555555;
+  --color-black-20: #808080;
+  --color-black-10: #aaaaaa;
+  --color-black-5: #cccccc;
+
+  /* === Neutral === */
+  --color-neutral-100: #333333;
+  --color-neutral-90: #555555;
+  --color-neutral-80: #808080;
+  --color-neutral-70: #aaaaaa;
+  --color-neutral-60: #d4d4d4;
+  --color-neutral-50: #ffffff;
+  --color-neutral-40: #fafafa;
+  --color-neutral-30: #f2ded7;
+  --color-neutral-20: #525256;
+  --color-neutral-10: #797980;
+  --color-neutral-5: #f4f4f4;
+
+  /* === Success === */
+  --color-success-100: #0c3003;
+  --color-success-90: #124804;
+  --color-success-80: #186006;
+  --color-success-70: #249108;
+  --color-success-60: #30c10b;
+  --color-success-50: #3df110;
+  --color-success-40: #63f43e;
+  --color-success-30: #8af76e;
+  --color-success-20: #b1f99f;
+  --color-success-10: #d8fccf;
+  --color-success-5: #ebfee7;
+
+  /* === Transparent === */
+  --color-transparent: transparent;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* === Reusable Tailwind Utility Classes === */
+
+.font-heading {
+  font-family: var(--font-heading);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.font-body {
+  font-family: var(--font-body);
+}
+
+.btn-primary {
+  @apply bg-[var(--color-primary-50)] text-white px-4 py-2 rounded-md shadow hover:bg-[var(--color-primary-60)] font-body transition;
+}
+
+.btn-secondary {
+  @apply bg-[var(--color-secondary-10)] text-black px-4 py-2 rounded-md font-body hover:bg-[var(--color-secondary-20)] transition;
+}
+
+.btn-success {
+  @apply bg-[var(--color-success-50)] text-white px-4 py-2 rounded-md font-body hover:bg-[var(--color-success-60)] transition;
+}
+
+.text-primary {
+  color: var(--color-primary-50);
+}
+
+.bg-primary {
+  background-color: var(--color-primary-50);
+}
+
+.text-secondary {
+  color: var(--color-secondary-10);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary-10);
+}
+
+.text-success {
+  color: var(--color-success-50);
+}
+
+.bg-success {
+  background-color: var(--color-success-50);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
