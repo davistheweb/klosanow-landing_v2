@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
       </div>
 
       <div className="max-sm:mt-10 flex justify-center">
-        <div className="flex justify-center items-center w-[380px] h-[380px] md:w-[450px] md:h-[450px] bg-secondary-sm rounded-full">
+        <div className="flex justify-center items-center w-[380px] h-[380px] md:w-[450px] md:h-[450px] bg-secondary-sm rounded-full transition-all duration-500 hover:scale-110">
           {/* <Elispce className="absolute w-[430px] h-[430px] bg-secondary-thin -z-1 top-0 " /> */}
           <Image
             src={heroImg}
