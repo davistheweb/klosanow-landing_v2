@@ -1,16 +1,9 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 
 interface IElpliceProp {
-  borderWidth?: string;
-  borderColor?: string;
-  bgColor?: string;
+  className?: string;
 }
-export const Elispce: React.FC<IElpliceProp> = ({
-  borderWidth,
-  borderColor,
-  bgColor,
-}) => {
-  return (
-    <div className={`${borderColor} ${borderWidth} ${bgColor} absolute`} />
-  );
+export const Elispce: React.FC<IElpliceProp> = ({ className }) => {
+  return <div className={cn("rounded-full", className)} />;
 };

@@ -24,7 +24,7 @@ export const MobileNav: React.FC<{
   return (
     <AnimatePresence>
       {navIsOpen && (
-        <div className="fixed inset-0 z-50 flex md:hidden backdrop-brightness-90 backdrop-saturate-150">
+        <div className="fixed inset-0 z-50 flex md:hidden backdrop-brightness-90 backdrop-saturate-150 ">
           <motion.div
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
@@ -32,23 +32,21 @@ export const MobileNav: React.FC<{
             transition={{ type: "tween", duration: 0.3 }}
             ref={navRef}
           >
-            <div className="h-full bg-white w-3xs sm:w-3/5 relative py-1 px-4">
+            <div className="h-full bg-white w-3xs relative py-1 px-4">
               <div className="mt-4">
                 <Logo />
               </div>
               <button
-                className="absolute text-primary top-3 right-3 cursor-pointer"
+                className="absolute text-primary-bold top-3 right-3 cursor-pointer"
                 onClick={() => setNavIsOpen(false)}
               >
                 <X />
               </button>
               <div className="flex justify-center mt-10">
-                <ul className="flex flex-col space-y-8 text-primary">
+                <ul className="flex flex-col space-y-8 text-primary-bold font-accent">
                   {MobileLinks.map(({ title, href }, i) => (
                     <li key={i}>
-                      <NavLinks href={href}>
-                        {title}
-                      </NavLinks>
+                      <NavLinks href={href}>{title}</NavLinks>
                     </li>
                   ))}
                 </ul>

@@ -12,17 +12,17 @@ export const Navbar: React.FC = () => {
   const [navIsOpen, setNavIsOpen] = useState<boolean>(false);
 
   return (
-    <nav className="fixed flex justify-between items-center top-0 left-0 w-full py-5 px-5 md:px-20 border h-20">
+    <nav className="fixed bg-white flex justify-between items-center top-0 left-0 w-full py-5 px-5 md:px-20 border h-20 z-10">
       <div className="flex justify-center">
         <Logo />
       </div>
       {/* Desktop Navigation */}
       <div className="hidden md:flex justify-between items-center">
-        <ul className="flex  space-x-10">
+        <ul className="flex space-x-10 font-accent">
           {Links.map(({ title, href }, i) => (
             <li
               key={i}
-              className="list-none text-base text-light md:hover:underline decoration-black font-medium"
+              className="list-none text-base text-primary-bold md:hover:underline decoration-black font-medium"
             >
               <NavLinks href={href}>{title}</NavLinks>
             </li>
@@ -41,10 +41,10 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Menu button */}
       <button
-        className="border p-1 md:hidden cursor-pointer text-primary"
+        className="border p-2 rounded-sm md:hidden cursor-pointer text-primary-bold"
         onClick={(): void => setNavIsOpen((prev) => !prev)}
       >
-        <Menu />
+        <Menu size={20} />
       </button>
     </nav>
   );

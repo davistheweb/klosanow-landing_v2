@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { NavLinkProps } from "@/data";
+import activeLinkIndicatorImg from "@/assets/images/general/polygon.svg";
 
 export const NavLinks: React.FC<NavLinkProps> = ({ children, href }) => {
   const pathname = usePathname();
@@ -12,7 +13,7 @@ export const NavLinks: React.FC<NavLinkProps> = ({ children, href }) => {
       <Link href={href}>{children}</Link>
       {isActive ? (
         <Image
-          src="/images/general/polygon.svg"
+          src={activeLinkIndicatorImg}
           alt="isActive"
           width={15}
           height={15}
