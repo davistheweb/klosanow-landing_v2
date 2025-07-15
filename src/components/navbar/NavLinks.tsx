@@ -1,0 +1,26 @@
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { NavLinkProps } from "@/data";
+
+export const NavLinks: React.FC<NavLinkProps> = ({ children, href }) => {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
+  return (
+    <div className="flex flex-col justify-center items-center">
+      <Link href={href}>{children}</Link>
+      {isActive ? (
+        <Image
+          src="/images/general/polygon.svg"
+          alt="isActive"
+          width={15}
+          height={15}
+          priority
+        />
+      ) : (
+        ""
+      )}
+    </div>
+  );
+};
