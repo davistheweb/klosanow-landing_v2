@@ -12,7 +12,7 @@ export const Navbar: React.FC = () => {
   const [navIsOpen, setNavIsOpen] = useState<boolean>(false);
 
   return (
-    <nav className="fixed bg-white flex justify-between items-center top-0 left-0 w-full py-5 px-5 md:px-20 border h-20 z-10">
+    <nav className="fixed bg-white flex justify-between items-center top-0 left-0 w-full py-5 px-5 md:px-20 border-b border-black/10 h-20 z-10">
       <div className="flex justify-center">
         <Logo />
       </div>
