@@ -46,7 +46,12 @@ export const MobileNav: React.FC<{
                 <ul className="flex flex-col space-y-8 text-primary-bold font-accent">
                   {MobileLinks.map(({ title, href }, i) => (
                     <li key={i}>
-                      <NavLinks href={href}>{title}</NavLinks>
+                      <NavLinks
+                        href={href}
+                        handleNavClick={() => setNavIsOpen((prev) => !prev)}
+                      >
+                        {title}
+                      </NavLinks>
                     </li>
                   ))}
                 </ul>

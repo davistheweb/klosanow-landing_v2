@@ -1,16 +1,18 @@
 import { ReactNode } from "react";
 import { StaticImageData } from "next/image";
 // import * as yup from "yup";
-import micImg from "@/assets/images/features/mic.png";
-import videoIconImg from "@/assets/images/features/videoIcon.png";
-import msgIcon from "@/assets/images/features/msgIcon.png";
-import slideImg from "@/assets/images/general/slideImg.png";
-import slideImg1 from "@/assets/images/general/slideImg1.png";
-import slideImg2 from "@/assets/images/general/slideImg2.png";
-import InstagramIcon from "@/assets/images/socials/Instagram.png";
-import LinkedInIcon from "@/assets/images/socials/LinkedIn.png";
-import TwitterIcon from "@/assets/images/socials/Twitter.png";
-import WhatsappIcon from "@/assets/images/socials/WhatsApp.png";
+import {
+  micImg,
+  videoIconImg,
+  msgIcon,
+  slideImg,
+  slideImg1,
+  slideImg2,
+  InstagramIcon,
+  LinkedInIcon,
+  TwitterIcon,
+  WhatsappIcon,
+} from "@/assets";
 
 type TImgPaths = {
   url: StaticImageData;
@@ -111,6 +113,7 @@ const footerSocialLinks: IFooterSocialLinks[] = [
 export interface NavLinkProps {
   children: ReactNode;
   href: string;
+  handleNavClick?: () => void;
 }
 
 export interface SocialBtnProps {

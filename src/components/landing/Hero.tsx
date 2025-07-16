@@ -3,11 +3,11 @@ import React from "react";
 import Image from "next/image";
 import { JoinWaitlistButton } from "../ui/JoinWaitlistButton";
 import { Elispce } from "../ui/Elispce";
-import heroImg from "@/assets/images/general/hero.png";
+import { heroImg } from "@/assets";
 
 export const Hero: React.FC = () => {
   return (
-    <div className="flex flex-col xl:flex-row lg:space-x-40 relative mt-10">
+    <div className="flex flex-col max-w-[2024px] justify-center xl:flex-row lg:space-x-40 relative mt-10">
       <Elispce className="absolute w-[400px] h-[400px] border-secondary-thin -z-1 -top-52 -left-70" />
       <div className="relative space-y-5 p-8">
         <h1 className="font-main font-bold text-3xl md:text-4xl w-full lg:max-w-[23ch] leading-10 md:leading-11">
