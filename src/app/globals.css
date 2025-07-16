@@ -158,6 +158,10 @@
   background-color: var(--color-primary-50);
 }
 
+.bg-primary-thin {
+  background-color: var(--color-primary-5);
+}
+
 .text-secondary {
   color: var(--color-secondary-10);
 }

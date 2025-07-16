@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
-// import { Footer } from "@/components/ui/Footer";
+import { Footer } from "@/components/ui/Footer";
 
 export const metadata: Metadata = {
   title: "Klosanow",
@@ -15,10 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="relative w-full flex flex-col justify-center  max-w-[2024px] overflow-x-hidden">
+      <body className="relative w-full flex flex-col justify-center max-w-[2024px] overflow-x-hidden">
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

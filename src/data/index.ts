@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { StaticImageData } from "next/image";
 // import * as yup from "yup";
 import micImg from "@/assets/images/features/mic.png";
 import videoIconImg from "@/assets/images/features/videoIcon.png";
@@ -6,7 +7,10 @@ import msgIcon from "@/assets/images/features/msgIcon.png";
 import slideImg from "@/assets/images/general/slideImg.png";
 import slideImg1 from "@/assets/images/general/slideImg1.png";
 import slideImg2 from "@/assets/images/general/slideImg2.png";
-import { StaticImageData } from "next/image";
+import InstagramIcon from "@/assets/images/socials/Instagram.png";
+import LinkedInIcon from "@/assets/images/socials/LinkedIn.png";
+import TwitterIcon from "@/assets/images/socials/Twitter.png";
+import WhatsappIcon from "@/assets/images/socials/WhatsApp.png";
 
 type TImgPaths = {
   url: StaticImageData;
@@ -19,6 +23,28 @@ type TLinks = {
   title: string;
   href: string;
 };
+
+type PrivacySection = {
+  title?: string;
+  paragraphs: string[];
+};
+
+interface FAQItem {
+  title: string;
+  text: string;
+}
+
+interface TermsSection {
+  title: string;
+  paragraphs: string[];
+}
+
+interface IFooterSocialLinks {
+  url: StaticImageData;
+  href: string;
+  width?: number;
+  height?: number;
+}
 
 const ImgPaths: TImgPaths[] = [
   { url: slideImg, height: 500, width: 500, className: "mt-15" },
@@ -46,13 +72,40 @@ const navFooter = [
   { title: "Privacy Policy", href: "/privacy" },
 ];
 
-const authFooter: { title: string; href: string }[] | null = [
+const authFooter: { title: string; href: string }[] = [
   { title: "Login", href: "#" },
   {
     title: "Create Account",
     href: "#",
   },
   { title: "Reset Password", href: "#" },
+];
+
+const footerSocialLinks: IFooterSocialLinks[] = [
+  {
+    url: WhatsappIcon,
+    href: "#",
+    width: 30,
+    height: 30,
+  },
+  {
+    url: LinkedInIcon,
+    href: "https://www.linkedin.com/company/klosanow",
+    width: 30,
+    height: 30,
+  },
+  {
+    url: TwitterIcon,
+    href: "https://twitter.com/klosanow",
+    width: 30,
+    height: 30,
+  },
+  {
+    url: InstagramIcon,
+    href: "https://www.instagram.com/klosanow?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
+    width: 30,
+    height: 30,
+  },
 ];
 
 export interface NavLinkProps {
@@ -116,11 +169,6 @@ const aboutSlide = [
   },
 ];
 
-interface FAQItem {
-  title: string;
-  text: string;
-}
-
 const faqItems: FAQItem[] = [
   {
     title: "What is Klosanow ?",
@@ -147,11 +195,6 @@ const faqItems: FAQItem[] = [
     text: "Yes, we've launched with the free version. The free edition allows you save drafts, create lesson, view lessons, create a study group, send lessons & messages to numerous individual chats and 50mb of storage space.",
   },
 ];
-
-type PrivacySection = {
-  title?: string;
-  paragraphs: string[];
-};
 
 const sections: PrivacySection[] = [
   {
@@ -215,11 +258,6 @@ const sections: PrivacySection[] = [
     ],
   },
 ];
-
-interface TermsSection {
-  title: string;
-  paragraphs: string[];
-}
 
 // All terms sections with titles and corresponding paragraphs
 const termsSection: TermsSection[] = [
@@ -328,6 +366,7 @@ export {
   ImgPaths,
   navFooter,
   authFooter,
+  footerSocialLinks,
   features,
   //   contactSchema,
   aboutSlide,

@@ -4,7 +4,7 @@ import { Hero, Features, Empower, Connect } from "@/components/landing";
 
 export default function Home() {
   return (
-    <div className="pb-20 mt-16 overflow-x-hidden">
+    <div className="mt-16 overflow-x-hidden">
       <div className="sm:p-20">
         <Hero />
         <Features />

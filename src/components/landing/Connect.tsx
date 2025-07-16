@@ -5,7 +5,7 @@ import { JoinWaitlistButton } from "../ui/JoinWaitlistButton";
 export const Connect: React.FC = () => {
   return (
     <div
-      className="w-full flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat mt-12 lg:-mt-9 p-0 h-[500px] z-[11000]"
+      className="w-full flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat mt-12 lg:-mt-9 h-[500px] z-[11000]"
       style={{ backgroundImage: `url(/connect.png)` }}
     >
       <p className="lg:text-[18px] text-white font-accent">Let’s Connect</p>
@@ -14,7 +14,7 @@ export const Connect: React.FC = () => {
       </h1>
       {/* Input */}
       <form
-        className="relative flex justify-between px-2 sm:px-5 items-center mt-5 bg-white w-full max-w-[350px] md:max-w-[490px] max-sm:max-w-[360px] lg:max-w-xl h-24 rounded-2xl"
+        className="relative flex justify-between px-2 sm:px-5 items-center mt-5 bg-white w-full max-w-[360px] max-[375px]:max-w-[330px] sm:max-w-[490px]  lg:max-w-xl xl:max-w-2xl h-24 rounded-2xl"
         onSubmit={(e) => {
           e.preventDefault();
         }}

@@ -17,7 +17,7 @@ export const Empower: React.FC = () => {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-40 relative mt-10 lg:mt-20 -z-1 visible">
       <div className="relative space-y-5 p-8">
-        <h1 className="font-main font-bold text-3xl md:text-4xl w-full lg:max-w-[23ch] leading-10 md:leading-11">
+        <h1 className="font-main font-bold text-3xl md:text-4xl lg:text-[40px] w-full lg:max-w-[23ch] leading-10 md:leading-11">
           Empowering Learners and Tutors Through Online Education
         </h1>
         <Elispce className="absolute w-[35px] h-[35px] bg-secondary-thin -z-1 top-80 left-[80%] md:left-[76%]" />
