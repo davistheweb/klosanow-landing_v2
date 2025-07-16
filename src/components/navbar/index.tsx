@@ -31,7 +31,9 @@ export const Navbar: React.FC = () => {
       </div>
       {/* Join waitlist desktop view  */}
       <div className="hidden md:flex">
-        <JoinWaitlistButton />
+        <JoinWaitlistButton
+          handleButtonClick={() => window.open("https://zc.vg/tav67", "_blank")}
+        />
       </div>
 
       {/* Mobile Menu Elements */}

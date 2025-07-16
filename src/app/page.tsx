@@ -1,11 +1,16 @@
 // import Image from "next/image";
 
-import { Hero } from "@/components/landing";
+import { Hero, Features, Empower, Connect } from "@/components/landing";
 
 export default function Home() {
   return (
-    <div className="min-h-screen pb-20 gap-16 sm:p-20 h-40 mt-16">
-      <Hero />
+    <div className="pb-20 mt-16 overflow-x-hidden">
+      <div className="sm:p-20">
+        <Hero />
+        <Features />
+        <Empower />
+      </div>
+      <Connect />
     </div>
   );
 }

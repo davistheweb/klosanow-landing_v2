@@ -121,10 +121,21 @@
   .font-accent {
     font-family: var(--font-accent);
   }
+  .bg-secondary-thin {
+    background-color: var(--color-secondary-30);
+  }
+
+  .bg-secondary-sm {
+    background-color: var(--color-secondary-20);
+  }
+}
+
+.how-works::after {
+  background-color: var(--color-secondary-30);
 }
 
 .btn-primary {
-  @apply bg-[var(--color-primary-50)] text-white px-4 py-2 rounded-sm shadow hover:bg-[var(--color-primary-60)] transition cursor-pointer;
+  @apply bg-[var(--color-primary-50)] text-white px-4 py-2 rounded-sm shadow hover:bg-[var(--color-primary-60)] transition-all duration-500  cursor-pointer;
 }
 
 .btn-secondary {
@@ -151,16 +162,16 @@
   color: var(--color-secondary-10);
 }
 
-.bg-secondary-thin {
-  background-color: var(--color-secondary-30);
-}
-
-.bg-secondary-sm {
-  background-color: var(--color-secondary-20);
-}
-
 .bg-secondary {
   background-color: var(--color-secondary-10);
+}
+
+.bg-neutral-md {
+  background-color: var(--color-neutral-30);
+}
+
+.bg-neutral-xmd {
+  background-color: var(--color-neutral-40);
 }
 
 .text-success {

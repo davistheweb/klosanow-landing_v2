@@ -1,10 +1,18 @@
 import { ReactNode } from "react";
 // import * as yup from "yup";
+import micImg from "@/assets/images/features/mic.png";
+import videoIconImg from "@/assets/images/features/videoIcon.png";
+import msgIcon from "@/assets/images/features/msgIcon.png";
+import slideImg from "@/assets/images/general/slideImg.png";
+import slideImg1 from "@/assets/images/general/slideImg1.png";
+import slideImg2 from "@/assets/images/general/slideImg2.png";
+import { StaticImageData } from "next/image";
 
 type TImgPaths = {
-  url: string;
+  url: StaticImageData;
   height?: number;
   width?: number;
+  className?: string;
 };
 
 type TLinks = {
@@ -13,9 +21,9 @@ type TLinks = {
 };
 
 const ImgPaths: TImgPaths[] = [
-  { url: "/images/general/slideImg.png", height: 500, width: 500 },
-  { url: "/images/general/slideImg1.png", height: 500, width: 500 },
-  { url: "/images/general/slideImg2.png", height: 500, width: 500 },
+  { url: slideImg, height: 500, width: 500, className: "mt-15" },
+  { url: slideImg1, height: 700, width: 500, className: "mt-12" },
+  { url: slideImg2, height: 500, width: 500, className: "-mt-10" },
 ];
 
 const Links: TLinks[] = [
@@ -60,15 +68,15 @@ export interface SocialBtnProps {
 
 const features = [
   {
-    src: "/images/features/mic.png",
+    src: micImg,
     desc: "Tutors create a video lesson with a desktop, by recording their voice explanations and lesson slides.",
   },
   {
-    src: "/images/features/videoIcon.png",
+    src: videoIconImg,
     desc: "Learners access the video lessons by watching online or downoading for offline access through any device.",
   },
   {
-    src: "/images/features/msgIcon.png",
+    src: msgIcon,
     desc: "Tutors and learners stay connected 24/7 through the study chat feature.",
   },
 ];
