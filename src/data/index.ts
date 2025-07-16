@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { StaticImageData } from "next/image";
-// import * as yup from "yup";
 import {
   micImg,
   videoIconImg,
@@ -36,7 +35,10 @@ interface FAQItem {
   text: string;
 }
 
-interface ICultureTalks extends FAQItem{};
+interface ICultureTalks {
+  title: string;
+  text: string;
+}
 
 interface TermsSection {
   title: string;
@@ -138,12 +140,6 @@ const features = [
     desc: "Tutors and learners stay connected 24/7 through the study chat feature.",
   },
 ];
-
-// const contactSchema = yup.object().shape({
-//   phone: yup.string().required("Phone Number is required"),
-//   email: yup.string().email().required("Email is required"),
-//   message: yup.string().required("Message is required").max(2500),
-// });
 
 const aboutSlide = [
   {
@@ -396,7 +392,6 @@ export {
   authFooter,
   footerSocialLinks,
   features,
-  //   contactSchema,
   aboutSlide,
   cultureTalks,
   faqItems,

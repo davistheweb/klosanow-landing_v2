@@ -4,11 +4,15 @@ import { cn } from "@/lib/utils";
 export const JoinWaitlistButton: React.FC<{
   className?: string;
   handleButtonClick?: () => void;
-}> = ({ className, handleButtonClick }) => {
+  type?: "submit" | "reset" | "button" | undefined;
+  disabled?: boolean;
+}> = ({ className, handleButtonClick, type, disabled }) => {
   return (
     <button
-      className={cn("btn-primary font-accent", className)}
+      className={cn(`btn-primary font-accent ${disabled ? "" : ""}`, className)}
       onClick={handleButtonClick}
+      type={type}
+      disabled={disabled}
     >
       Join Waitlist
     </button>

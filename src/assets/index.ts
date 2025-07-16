@@ -14,6 +14,7 @@ import WhatsappIcon from "./images/socials/WhatsApp.png";
 import moonImg from "./images/about/moon.svg";
 import stackImg from "./images/about/stack.png";
 import cultureImg from "./images/about/culture.png";
+import contactImg from "./images/general/contact.png";
 
 export {
   LogoImg,
@@ -32,4 +33,5 @@ export {
   moonImg,
   stackImg,
   cultureImg,
+  contactImg,
 };
