@@ -36,6 +36,8 @@ interface FAQItem {
   text: string;
 }
 
+interface ICultureTalks extends FAQItem{};
+
 interface TermsSection {
   title: string;
   paragraphs: string[];
@@ -169,6 +171,29 @@ const aboutSlide = [
     id: 4,
     title: "Personalized Learning",
     desc: "Tutors can create learning contents in line with their learners' preferred language, curriculum and learning style.",
+  },
+];
+
+const cultureTalks: ICultureTalks[] = [
+  {
+    title: "Seamless:",
+    text: "Klosanow values providing a smooth and hassle-free experience for its users, ensuring that using the platform is effortless and efficient.",
+  },
+  {
+    title: "Support:",
+    text: "The brand places high importance on offering strong customer support and assistance to its users, ensuring they have the guidance they need.",
+  },
+  {
+    title: "Growth:",
+    text: "Klosanow promotes a culture of continuous growth and improvement, both for the platform and its users.",
+  },
+  {
+    title: "Openness:",
+    text: "The brand encourages an open and transparent communication culture, where ideas and feedback are welcomed.",
+  },
+  {
+    title: "Inspiring:",
+    text: "Klosanow aims to inspire its users to embrace the power of online education and pursue their learning goals with enthusiasm.",
   },
 ];
 
@@ -373,6 +398,7 @@ export {
   features,
   //   contactSchema,
   aboutSlide,
+  cultureTalks,
   faqItems,
   sections,
   termsSection,

@@ -150,6 +150,10 @@
   color: var(--color-primary-50);
 }
 
+.text-neutral-thin {
+  color: var(--color-neutral-20);
+}
+
 .text-primary-bold {
   color: var(--color-primary-80);
 }
@@ -168,6 +172,10 @@
 
 .bg-secondary {
   background-color: var(--color-secondary-10);
+}
+
+.bg-neutral-xs {
+  background-color: var(--color-primary-15)
 }
 
 .bg-neutral-md {

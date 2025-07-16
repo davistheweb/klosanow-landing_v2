@@ -13,6 +13,7 @@ import TwitterIcon from "./images/socials/Twitter.png";
 import WhatsappIcon from "./images/socials/WhatsApp.png";
 import moonImg from "./images/about/moon.svg";
 import stackImg from "./images/about/stack.png";
+import cultureImg from "./images/about/culture.png";
 
 export {
   LogoImg,
@@ -30,4 +31,5 @@ export {
   WhatsappIcon,
   moonImg,
   stackImg,
+  cultureImg,
 };
