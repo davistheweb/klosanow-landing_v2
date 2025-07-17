@@ -19,7 +19,7 @@ function wrapPrivacyPolicy(text: string) {
           className="underline text-primary hover:opacity-80"
         >
           {matches[i]}
-        </Link>,
+        </Link>
       );
     }
     return acc;
@@ -35,9 +35,11 @@ const TermsPage: React.FC = () => (
             {title}
           </h1>
           {paragraphs.map((para, pIndex) => (
-            <p key={pIndex} className="font-accent">
-              {wrapPrivacyPolicy(para)}
-            </p>
+            <p
+              key={pIndex}
+              className="font-accent"
+              dangerouslySetInnerHTML={{ __html: wrapPrivacyPolicy(para) }}
+            />
           ))}
         </div>
       ))}

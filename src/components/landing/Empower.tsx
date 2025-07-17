@@ -15,7 +15,7 @@ export const Empower: React.FC = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
 
   return (
-    <div className="flex flex-col lg:flex-row lg:space-x-40 relative mt-10 lg:mt-20 -z-1 visible">
+    <div className="flex flex-col xl:flex-row lg:space-x-40 relative mt-10 lg:mt-20 -z-1 visible">
       <div className="relative space-y-5 p-8">
         <h1 className="font-main font-bold text-3xl md:text-4xl lg:text-[40px] w-full lg:max-w-[23ch] leading-10 md:leading-11">
           Empowering Learners and Tutors Through Online Education

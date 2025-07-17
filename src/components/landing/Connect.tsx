@@ -5,7 +5,7 @@ import { JoinWaitlistButton } from "../ui/JoinWaitlistButton";
 export const Connect: React.FC = () => {
   return (
     <div
-      className="w-full flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat mt-12 lg:-mt-9 h-[500px] z-[11000]"
+      className="w-full flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat mt-12 md:-mt-10 xl:-mt-9 h-[500px] z-[11000]"
       style={{ backgroundImage: `url(/connect.png)` }}
     >
       <p className="lg:text-[18px] text-white font-accent">Let’s Connect</p>

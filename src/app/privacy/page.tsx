@@ -10,9 +10,11 @@ const PrivacyPage: React.FC = () => (
             {title}
           </h1>
           {paragraphs.map((para, pIndex) => (
-            <p key={pIndex} className="font-accent">
-              {para}
-            </p>
+            <p
+              key={pIndex}
+              className="font-accent"
+              dangerouslySetInnerHTML={{__html: para }}
+            />
           ))}
         </div>
       ))}

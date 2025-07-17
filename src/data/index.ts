@@ -278,7 +278,7 @@ const sections: PrivacySection[] = [
   {
     title: "Contact Us",
     paragraphs: [
-      "If You have any questions about this Privacy Notice, please contact Us at team@klosanow.com",
+      `If You have any questions about this Privacy Notice, please contact Us at <a href='mailto:team@klosanow.com' style="text-decoration: underline;">team@klosanow.com</a>`,
     ],
   },
 ];
@@ -379,7 +379,7 @@ const termsSection: TermsSection[] = [
   {
     title: "Contact Us",
     paragraphs: [
-      `If you have any questions about these Terms, please contact us at team@klosanow.com`,
+      `If you have any questions about these Terms, please contact us at <a href='mailto:team@klosanow.com' style="text-decoration: underline;">team@klosanow.com</a>`,
     ],
   },
 ];
