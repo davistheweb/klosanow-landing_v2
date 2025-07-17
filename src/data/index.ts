@@ -66,7 +66,7 @@ const Links: TLinks[] = [
 
 const MobileLinks = [
   ...Links,
-  { title: "Join waitlist", href: "https://zcvg/tav67" },
+  { title: "Join waitlist", href: "https://zc.vg/tav67" },
   // { title: "LogIn", href: "https://klosanow-frontend.vercel.app" },
 ];
 
