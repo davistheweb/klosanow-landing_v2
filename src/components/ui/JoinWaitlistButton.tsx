@@ -6,15 +6,13 @@ export const JoinWaitlistButton: React.FC<{
   handleButtonClick?: () => void;
   type?: "submit" | "reset" | "button" | undefined;
   disabled?: boolean;
-}> = ({ className, handleButtonClick, type, disabled }) => {
-  return (
-    <button
-      className={cn(`btn-primary font-accent ${disabled ? "" : ""}`, className)}
-      onClick={handleButtonClick}
-      type={type}
-      disabled={disabled}
-    >
-      Join Waitlist
-    </button>
-  );
-};
+}> = ({ className, handleButtonClick, type, disabled }) => (
+  <button
+    className={cn(`btn-primary font-accent ${disabled ? "" : ""}`, className)}
+    onClick={handleButtonClick}
+    type={type}
+    disabled={disabled}
+  >
+    Join Waitlist
+  </button>
+);
