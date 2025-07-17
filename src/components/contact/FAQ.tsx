@@ -24,7 +24,12 @@ export const FAQ: React.FC = () => (
           {title}
         </AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
-          <p className="font-accent text-[16px] lg:text-[18px]">{text}</p>
+          <p
+            className="font-accent text-[16px] lg:text-[18px]"
+            style={{ whiteSpace: "pre-line" }}
+          >
+            {text}
+          </p>
         </AccordionContent>
       </AccordionItem>
     ))}

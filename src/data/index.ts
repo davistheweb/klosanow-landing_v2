@@ -216,7 +216,7 @@ const faqItems: FAQItem[] = [
   },
   {
     title: "Is using the platform free?",
-    text: "Yes, we've launched with the free version. The free edition allows you save drafts, create lesson, view lessons, create a study group, send lessons & messages to numerous individual chats and 50mb of storage space.",
+    text: "Yes, we've launched with the free version. The free edition allows you save drafts, create lesson, view lessons, create a study group, send lessons & messages to numerous individual chats and offers 50mb of storage space.",
   },
 ];
 
@@ -278,7 +278,7 @@ const sections: PrivacySection[] = [
   {
     title: "Contact Us",
     paragraphs: [
-      "If You have any questions about this Privacy Notice, please contact Us at example@email.com",
+      "If You have any questions about this Privacy Notice, please contact Us at team@klosanow.com",
     ],
   },
 ];
@@ -379,7 +379,7 @@ const termsSection: TermsSection[] = [
   {
     title: "Contact Us",
     paragraphs: [
-      `If you have any questions about these Terms, please contact us at example@email.com.`,
+      `If you have any questions about these Terms, please contact us at team@klosanow.com.`,
     ],
   },
 ];

@@ -1,5 +1,30 @@
 import { termsSection } from "@/data";
 import React from "react";
+import Link from "next/link";
+
+function wrapPrivacyPolicy(text: string) {
+  const regex = /PRIVACY POLICY/;
+  const parts = text.split(regex);
+  const matches = text.match(regex);
+
+  if (!matches) return text;
+
+  return parts.reduce((acc: React.ReactNode[], part, i) => {
+    acc.push(part);
+    if (i < matches.length) {
+      acc.push(
+        <Link
+          key={i}
+          href="/privacy"
+          className="underline text-primary hover:opacity-80"
+        >
+          {matches[i]}
+        </Link>,
+      );
+    }
+    return acc;
+  }, []);
+}
 
 const TermsPage: React.FC = () => (
   <div className="relative mt-24 overflow-x-hidden pb-10">
@@ -11,7 +36,7 @@ const TermsPage: React.FC = () => (
           </h1>
           {paragraphs.map((para, pIndex) => (
             <p key={pIndex} className="font-accent">
-              {para}
+              {wrapPrivacyPolicy(para)}
             </p>
           ))}
         </div>
