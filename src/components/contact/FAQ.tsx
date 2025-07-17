@@ -15,7 +15,11 @@ export const FAQ: React.FC = () => (
     defaultValue="item-1"
   >
     {faqItems.map(({ title, text }, _i) => (
-      <AccordionItem key={_i} value={`"item-${_i+1}"`} className="w-full border-gray-300">
+      <AccordionItem
+        key={_i}
+        value={`"item-${_i + 1}"`}
+        className="w-full border-gray-300"
+      >
         <AccordionTrigger className="w-full font-main font-bold text-[16px] lg:text-xl cursor-pointer">
           {title}
         </AccordionTrigger>

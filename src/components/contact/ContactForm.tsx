@@ -17,7 +17,7 @@ type ContactFormValues = {
 export const ContactForm: React.FC = () => {
   const handleSubmit = async (
     values: ContactFormValues,
-    actions: FormikHelpers<ContactFormValues>
+    actions: FormikHelpers<ContactFormValues>,
   ) => {
     console.log("Submitted values:", values);
 

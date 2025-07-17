@@ -33,7 +33,7 @@ const About: React.FC = () => {
         </div>
       </div>
       {/* About slide  */}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center pb-24 lg:pb-10">
         <AboutSlide />
       </div>
 
