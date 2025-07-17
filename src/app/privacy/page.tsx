@@ -13,7 +13,7 @@ const PrivacyPage: React.FC = () => (
             <p
               key={pIndex}
               className="font-accent"
-              dangerouslySetInnerHTML={{__html: para }}
+              dangerouslySetInnerHTML={{ __html: para }}
             />
           ))}
         </div>

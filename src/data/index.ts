@@ -379,7 +379,7 @@ const termsSection: TermsSection[] = [
   {
     title: "Contact Us",
     paragraphs: [
-      `If you have any questions about these Terms, please contact us at <a href='mailto:team@klosanow.com' style="text-decoration: underline;">team@klosanow.com</a>`,
+      `If you have any questions about these Terms, please contact us at team@klosanow.com`,
     ],
   },
 ];
