@@ -17,7 +17,7 @@ type ContactFormValues = {
 export const ContactForm: React.FC = () => {
   const handleSubmit = async (
     values: ContactFormValues,
-    actions: FormikHelpers<ContactFormValues>,
+    actions: FormikHelpers<ContactFormValues>
   ) => {
     console.log("Submitted values:", values);
 
@@ -76,6 +76,7 @@ export const ContactForm: React.FC = () => {
             inputStyle={{
               width: "100%",
               height: "3rem",
+              fontSize: "16px",
             }}
             value={formik.values.phone}
             onChange={(value: string) => formik.setFieldValue("phone", value)}

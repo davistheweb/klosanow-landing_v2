@@ -48,7 +48,7 @@ export const AboutSlide: React.FC = () => (
 
           <div className="w-full h-full flex flex-col justify-center items-center select-none">
             <h1 className="font-main text-2xl xl:text-4xl z-10">{title}</h1>
-            <p className="mt-4 font-accent text-center text-xl max-w-[25ch] md:max-w-[45ch] z-10">
+            <p className="mt-4 font-accent text-center text-xl max-w-[24ch] md:max-w-[45ch] z-10 select-none">
               {desc}
             </p>
           </div>

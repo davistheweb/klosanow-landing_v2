@@ -177,7 +177,7 @@ const cultureTalks: ICultureTalks[] = [
   },
   {
     title: "Support:",
-    text: "The brand places high importance on offering strong customer support and assistance to its users, ensuring they have the guidance they need.",
+    text: "We place high importance on offering strong customer support and assistance to its users, ensuring they have the guidance they need.",
   },
   {
     title: "Growth:",
@@ -185,7 +185,7 @@ const cultureTalks: ICultureTalks[] = [
   },
   {
     title: "Openness:",
-    text: "The brand encourages an open and transparent communication culture, where ideas and feedback are welcomed.",
+    text: "We encourage an open and transparent communication culture, where ideas and feedback are welcomed.",
   },
   {
     title: "Inspiring:",
