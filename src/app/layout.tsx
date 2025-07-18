@@ -4,7 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/ui/Footer";
 
 export const metadata: Metadata = {
-  title: "The platform for a seamless online education experience.",
+  title: "The platform for a seamless online education experience",
   // description: "",
   icons: 'klosanow-logo.jpg'
 };
