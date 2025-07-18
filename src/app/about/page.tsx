@@ -23,7 +23,7 @@ const About: React.FC = () => (
           engaging pre-recorded video lessons, enabling learners to access and
           engage with the content conveniently on our platform, anytime and
           anywhere. Embrace the future of education with Klosanow and embark on
-          a transformative learning experience that transcends traditional
+          a transformative teaching and learning experience that transcends traditional
           boundaries.
         </p>
         <div className="lg:-mt-24">

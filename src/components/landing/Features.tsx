@@ -8,8 +8,8 @@ export const Features: React.FC = () => (
     <Elispce className="absolute w-[500px] h-[500px] bg-secondary-sm -z-1 top-52 -left-52" />
     <div className="flex flex-col justify-center bg-neutral-xmd w-full p-20 rounded-2xl shadow-xl">
       <div className="flex justify-end relative w-full">
-        <div className="max-w-[45ch] text-end">
-          <h1 className="relative font-main font-bold text-4xl md:text-5xl after:absolute after:content[''] after:w-20 how-works after:h-1 after:bottom-0 after:right-0">
+        <div className="text-center lg:max-w-[45ch] lg:text-end">
+          <h1 className="relative font-main font-bold text-2xl md:text-5xl after:absolute after:content[''] after:w-20 how-works after:h-1 after:bottom-0 after:right-0">
             How Klosanow works
           </h1>
         </div>
